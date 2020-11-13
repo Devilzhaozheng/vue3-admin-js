@@ -1,7 +1,6 @@
 <template>
   <div class="login">
-    登录页
-    <a-button type="primary">按钮</a-button>
+    <div class="form-wrap"></div>
   </div>
 </template>
 
@@ -11,10 +10,6 @@ name: "Login"
 }
 </script>
 
-<style scoped>
-  .login {
-    background-color: #42b983;
-    width: 100vw;
-    height: 100vh;
-  }
+<style lang="scss" scoped>
+@import "./style.scss";
 </style>
