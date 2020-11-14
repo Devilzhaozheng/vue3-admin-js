@@ -4,19 +4,25 @@
       <a-form
         label-align="left"
       >
-        <a-form-item label="用户名">
+        <a-form-item>
+          <label>用户名</label>
           <a-input v-model:value="formConfig.userName" type="text" />
         </a-form-item>
-        <a-form-item label="密码">
+        <a-form-item>
+          <label>密码</label>
           <a-input v-model:value="formConfig.userPassword" type="password" />
         </a-form-item>
         <a-form-item>
-          <a-button @click="login">
-            Submit
+          <a-button @click="login" type="primary" size="small">
+            登录
           </a-button>
         </a-form-item>
       </a-form>
-      <div>{{ formConfig.userName }}----{{ formConfig.userPassword}}</div>
+      <div>
+        <a class="color-white">忘记密码</a>
+        ｜
+        <a class="color-white">注册</a>
+      </div>
     </div>
   </div>
 </template>
